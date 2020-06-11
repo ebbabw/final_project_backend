@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Recycled braclet",
+        "image": "",
+        "description": "ECO FRIENDLY - Braclet made with ocean plastic",
+        "price": 120,
+        "countInStock": 200
+    },
+
+    {
+        "name": "Recycled sunglasses",
+        "image": "",
+        "description": "ECO FRIENDLY - Sunglasses with frames made of ocean plastic",
+        "price": 1000,
+        "countInStock": 200
+    },
+
+    {
+        "name": "Reusable bag",
+        "image": "",
+        "description": "Reusable ECO FRIENDLY - bag with clean ocean generation logo",
+        "price": 49,
+        "countInStock": 200
+    },
+
+    {
+        "name": "Clean water generation t-shirt",
+        "image": "",
+        "description": "ECO FRIENDLY - T-Shirt made from 100% recycled materials ",
+        "price": 350,
+        "countInStock": 200
+    },
+
+    {
+        "name": "Sven the turtle",
+        "image": "",
+        "description": "ECO FRIENDLY - stuffed animal made from plastic bottles",
+        "price": 100,
+        "countInStock": 200
+    },
+
+    {
+        "name": "Save the ocean e-certificate - donation",
+        "image": "",
+        "description": "All the donations with be speard on 3 diffrent organizations Ocean1, coralgardeners and 1% for the planet",
+        "price": 20,
+        "countInStock": 200
+    }
+
+
+
+
+
+]
+
+
