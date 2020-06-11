@@ -124,16 +124,10 @@ app.post('/sessions', async (req, res) => {
   const seedDatabase = async () => {
     await Product.deleteMany();
 
-    Product.forEach((product) => new Product(product).save());
+    data.forEach((product) => new Product(product).save());
 
   };
   seedDatabase();
-
-
-
-app.get('/products', (req, res) => {
-  res.send(Product)
-})
 
 
 app.get("/products", async (req, res) => {
