@@ -9,7 +9,7 @@ import Product from './models/Product'
 import productdata from './data/productdata'
 
 import About from './models/About'
-import aboutcwg from './aboutcwg/'
+import aboutcwg from './data/aboutcwg'
 
 const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/cleanGenAPI"
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -126,8 +126,10 @@ app.post('/sessions', async (req, res) => {
 
   const seedDatabase = async () => {
     await Product.deleteMany();
+    await About.deleteMany();
 
     productdata.forEach((product) => new Product(product).save());
+    aboutcwg.forEach((about) => new About(about).save());
 
   };
   seedDatabase();
@@ -169,15 +171,6 @@ app.get('/product/:id', async (req, res) => {
 
 
 // information API 
-
-const seedDatabase = async () => {
-  await About.deleteMany();
-
-  aboutcwg.forEach((about) => new About(about).save());
-
-};
-seedDatabase();
-
 
 app.get("/about", async (req, res) => {
   
