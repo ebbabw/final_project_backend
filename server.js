@@ -6,7 +6,10 @@ import crypto from 'crypto'
 import bcrypt from 'bcrypt-nodejs'
 
 import Product from './models/Product'
-import data from './data/productdata'
+import productdata from './data/productdata'
+
+import About from './models/About'
+import aboutcwg from './aboutcwg/'
 
 const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/cleanGenAPI"
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -124,7 +127,7 @@ app.post('/sessions', async (req, res) => {
   const seedDatabase = async () => {
     await Product.deleteMany();
 
-    data.forEach((product) => new Product(product).save());
+    productdata.forEach((product) => new Product(product).save());
 
   };
   seedDatabase();
@@ -135,8 +138,8 @@ app.get("/products", async (req, res) => {
   Product.find(res.query)
   
   try { 
-  if (data) {
-       res.json(data)
+  if (productdata) {
+       res.json(productdata)
    } else {
      res.status(404).json({error: 'Could not found product'})
    }
@@ -165,8 +168,39 @@ app.get('/product/:id', async (req, res) => {
 })
 
 
+// information API 
+
+const seedDatabase = async () => {
+  await About.deleteMany();
+
+  aboutcwg.forEach((about) => new About(about).save());
+
+};
+seedDatabase();
+
+
+app.get("/about", async (req, res) => {
+  
+  About.find(res.query)
+  
+  try { 
+  if (aboutcwg) {
+       res.json(aboutcwg)
+   } else {
+     res.status(404).json({error: 'Could not found product'})
+   }
+
+  } catch {
+    res.status(404).json({ error: 'Something is invalid' })
+  }
+  
+});
+
+
 
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`)
 })
+
+
