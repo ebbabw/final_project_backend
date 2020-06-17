@@ -1,7 +1,7 @@
 [
     {
         "name": "Recycled bracelet",
-        "image": "require('./assets/4o-Recycled-bracelet.jpg')",
+        "image": "/assets/4o-Recycled-bracelet.jpg",
         "description": "ECO FRIENDLY - Braclet made with ocean plastic from 4ocean",
         "price": 12,
         "countInStock": 200
@@ -9,7 +9,7 @@
 
     {
         "name": "Recycled sunglasses",
-        "image": "require('./assets/fellepinisea.jpg')",
+        "image": "/assets/fellepinisea.jpg",
         "description": "ECO FRIENDLY - Sunglasses with frames made of ocean plastic from Synsam",
         "price": 100,
         "countInStock": 200
@@ -17,7 +17,7 @@
 
     {
         "name": "Reusable bag",
-        "image": "require('./assets/cleanbag.jpg')",
+        "image": "/assets/cleanbag.jpg",
         "description": "Reusable ECO FRIENDLY - bag with clean ocean generation logo",
         "price": 5,
         "countInStock": 200
@@ -25,8 +25,8 @@
 
     {
         "name": "Clean water generation t-shirt",
-        "image":  "require('./assets/t-shirt.jpg')",
-        "image2":  "require('./assets/t-shirtback.jpg')",
+        "image":  "/assets/t-shirt.jpg",
+        "image2":  "/assets/t-shirtback.jpg",
         "description": "ECO FRIENDLY - T-Shirt made from 100% recycled materials",
         "price": 35,
         "countInStock": 200
@@ -34,7 +34,7 @@
 
     {
         "name": "Shelly the turtle",
-        "image": "require('./assets/shellyturtle.jpg')",
+        "image": "/assets/shellyturtle.jpg",
         "description": "ECO FRIENDLY - stuffed animal made from plastic bottles",
         "price": 10,
         "countInStock": 200
@@ -42,7 +42,7 @@
 
     {
         "name": "Save the ocean e-certificate - donation",
-        "image": "require('./assets/e-certificate.jpg')",
+        "image": "/assets/e-certificate.jpg",
         "description": "All the donations with be speard on 3 diffrent organizations 4ocean, coralgardeners and 1% for the planet",
         "price": 2,
         "countInStock": 200
