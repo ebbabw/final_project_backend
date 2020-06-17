@@ -136,12 +136,12 @@ app.post('/sessions', async (req, res) => {
 
 
 app.get("/products", async (req, res) => {
-  
-  Product.find(res.query)
+
+  const allProducts = await Product.find(res.query)
   
   try { 
-  if (productdata) {
-       res.json(productdata)
+  if (allProducts) {
+       res.json(allProducts)
    } else {
      res.status(404).json({error: 'Could not found product'})
    }
