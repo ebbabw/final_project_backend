@@ -88,7 +88,7 @@ const authenticateUser = async (req, res, next) => {
 
 app.get("/allmembers", async (req, res) => {
   
-  const allmembers = Member.find(res.query)
+  const allmembers = await Member.find(res.query)
   
   try { 
   if (allmembers) {
