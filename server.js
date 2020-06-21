@@ -86,6 +86,23 @@ const authenticateUser = async (req, res, next) => {
     }
 }
 
+app.get("/allmembers", async (req, res) => {
+  
+  const allmembers = Member.find(res.query)
+  
+  try { 
+  if (allmembers) {
+       res.json(allmembers)
+   } else {
+     res.status(404).json({error: 'Could not find member'})
+   }
+
+  } catch {
+    res.status(404).json({ error: 'Something is invalid' })
+  }
+  
+});
+
 app.post('/members', async (req, res) => {
 
   try {
