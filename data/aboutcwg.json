@@ -2,18 +2,25 @@
 
     {
         "name": "purpose",
-        "info": "We are a non-profit organization and we are an information-based organization. We are a source between you and our partners. Our goal is to to make the planet a better place for wildlife and our main focus is the ocean, plastic pollution in the ocean is a huge problem and today according to www.sas.org around 5,25 trillion macro and microplastic pieces in floating in the ocean and every year around 100.000 marine animals mammals and turtles and 1 million sea birds are killed by marine plastic pollution."
+        "info": "We are a non-profit and information-based organization. We are a source between you and our partners. Our goal is to make the planet a better place for us and wildlife. Our main focus is the ocean, plastic pollution in the oceans is a huge problem, and today according to www.sas.org around 5,25 trillion macro and microplastic pieces in floating in the ocean. Every year around 100.000 marine animal mammals and turtles and 1 million sea birds are killed by marine plastic pollution."
     },
 
 
     {
         "name": "Mission",
-        "info": "Not all generations had this issue but there are a lot more generations the will fight for this. Clean water generation doesn't stop at this generation. We want clean water for all generations from now on. But if we don't take action now some of our grandchildren will not have a future."
+        "info": "Clean water generation work doesn't stop at this generation. We want clean water for all generations from now on. But if we don't take action now it may be too late."
     },
 
     {
         "name": "Action",
-        "info": "Our webshop is for you to take action with just a click of a button, it easy. The profit from the shop will go to; our, workshop, educational programs, and the clean the ocean trip these are all produced by our partners."
+        "info": "Our webshop is for you to take action with just a click of a button, it's easy. The profit from the shop will go to; our workshops, educational programs, and clean ocean trips."
+    },
+
+
+    {
+        "image1": "/assets/oceanturtle.jpg",
+        "image2": "/assets/coralfish.jpg",
+        "image3": "/assets/plasticcleanup.jpg"
     }
 
 ]
