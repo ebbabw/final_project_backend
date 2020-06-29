@@ -11,6 +11,8 @@ import productdata from './data/productdata'
 import About from './models/About'
 import aboutcwg from './data/aboutcwg'
 
+
+
 const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/cleanGenAPI"
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
 mongoose.Promise = Promise

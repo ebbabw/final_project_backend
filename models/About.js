@@ -4,6 +4,7 @@ const About = mongoose.model('About', {
 
     name: { type: String },
     info: { type: String },
+    image: {type: String }
    
   });
 
