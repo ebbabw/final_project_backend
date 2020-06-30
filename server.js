@@ -122,6 +122,11 @@ app.get('/memberpage', (req, res) => {
   res.status(201).json({ message: 'Hello' });
 })
 
+app.get('/profilepage', authenticateUser);
+app.get('/profilepage', (req, res) => {
+  res.status(201).json({ message: 'Hello' });
+})
+
 app.post('/sessions', async (req, res) => {
 
   try {
