@@ -6,7 +6,7 @@ I want to make a user-friendly application with nice functions and design. This 
 
 Features:
 
-Authentication method
+- Authentication method
 - Web shop (donate)
 - RESTful APIs with Node.js
 
