@@ -7,15 +7,17 @@ I want to make a user-friendly application with nice functions and design. This 
 Features:
 
 Authentication method
-Web shop (donate)
-RESTful APIs with Node.js
+- Web shop (donate)
+- RESTful APIs with Node.js
+
 Tech I plan to used:
 
-React
-Style components
-Redux
-Node.js
-Lottie
+- React
+- Style components
+- Redux
+- Node.js
+- Lottie
+
 Inspiration: https://www.ellos.se/ https://www.coralgardeners.org/
 
 Frontend: https://objective-newton-e0c19c.netlify.app/
