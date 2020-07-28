@@ -6,7 +6,7 @@ import crypto from 'crypto'
 import bcrypt from 'bcrypt-nodejs'
 
 import Product from './models/Product'
-import productdata from './data/productdata'
+import productlist from './data/productlist'
 
 import Facts from './models/Facts'
 import facts from './data/facts'
@@ -147,7 +147,7 @@ app.post('/sessions', async (req, res) => {
     await Product.deleteMany();
     await Facts.deleteMany();
 
-    productdata.forEach((product) => new Product(product).save());
+    productlist.forEach((product) => new Product(product).save());
     facts.forEach((facts) => new Facts(facts).save());
 
   };
