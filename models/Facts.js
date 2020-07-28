@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-const About = mongoose.model('About', {
+const Facts = mongoose.model('Facts', {
 
     name: { type: String },
     info: { type: String },
@@ -8,5 +8,5 @@ const About = mongoose.model('About', {
    
   });
 
-  export default About
+  export default Facts
   

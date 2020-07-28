@@ -8,8 +8,8 @@ import bcrypt from 'bcrypt-nodejs'
 import Product from './models/Product'
 import productdata from './data/productdata'
 
-import About from './models/About'
-import aboutcwg from './data/aboutcwg'
+import Facts from './models/Facts'
+import facts from './data/facts'
 
 
 
@@ -145,10 +145,10 @@ app.post('/sessions', async (req, res) => {
 
   const seedDatabase = async () => {
     await Product.deleteMany();
-    await About.deleteMany();
+    await Facts.deleteMany();
 
     productdata.forEach((product) => new Product(product).save());
-    aboutcwg.forEach((about) => new About(about).save());
+    facts.forEach((facts) => new Facts(facts).save());
 
   };
   seedDatabase();
@@ -191,15 +191,15 @@ app.get('/product/:id', async (req, res) => {
 
 // information API 
 
-app.get("/about", async (req, res) => {
+app.get("/facts", async (req, res) => {
   
-  About.find(res.query)
+  Facts.find(res.query)
   
   try { 
-  if (aboutcwg) {
-       res.json(aboutcwg)
+  if (facts) {
+       res.json(facts)
    } else {
-     res.status(404).json({error: 'Could not found product'})
+     res.status(404).json({error: 'Could not found fact'})
    }
 
   } catch {
