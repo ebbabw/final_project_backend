@@ -1,7 +1,25 @@
-# Express Starter Project
+CLEAN WATER GENERATION - FINAL PROJECT 🌊 Technigo bootcamp
 
-This project includes the packages and babel setup for an express server, and is just meant to make things a little simpler to get up and running with.
+By: Ebba Bergholtz-Widell
 
-## Getting started
+I want to make a user-friendly application with nice functions and design. This is app is for charity and an online membership. I will focus on making it to a community. This is an idea I had from the second business project, I will use all the skills that I have now and elevate it to a real functional application.
 
-Install dependencies with `npm install`, then start the server by running `npm run dev`
+Features:
+
+- Authentication method
+- Web shop (donate)
+- RESTful APIs with Node.js
+
+Tech I plan to used:
+
+- React
+- Style components
+- Redux
+- Node.js
+- Lottie
+
+Inspiration: https://www.ellos.se/ https://www.coralgardeners.org/
+
+Frontend: https://objective-newton-e0c19c.netlify.app/
+
+Backend: https://ebba-final-project.herokuapp.com/
