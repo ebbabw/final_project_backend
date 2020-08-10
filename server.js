@@ -174,7 +174,7 @@ app.get("/products", async (req, res) => {
 app.get('/product/:productId', async (req, res) => {
 
   try {
-    const product_id = await Product.findById(req.params.id)
+    const product_id = await Product.findById(req.params._id)
 
     if(product_id) {
       res.json(product_id )
